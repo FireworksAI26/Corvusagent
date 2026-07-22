@@ -21,8 +21,8 @@ ENV CORVUS_BOOTSTRAP_TOKEN="" \
     PYTHONUNBUFFERED=1
 RUN useradd --system --uid 10001 --home-dir /app --create-home corvus \
     && install -d -o corvus -g corvus /data /app/web
-COPY --from=wheel-builder /wheel/*.whl /tmp/corvus.whl
-RUN python -m pip install --no-cache-dir /tmp/corvus.whl && rm /tmp/corvus.whl
+COPY --from=wheel-builder /wheel/*.whl /tmp/
+RUN WHEEL_PATH="$(find /tmp -maxdepth 1 -type f -print -quit)" && python -m pip install --no-cache-dir "$WHEEL_PATH" "e2b>=2.3,<3" && rm "$WHEEL_PATH"
 COPY --from=web-builder --chown=corvus:corvus /src/apps/web/dist/ /app/web/
 USER corvus
 WORKDIR /app
