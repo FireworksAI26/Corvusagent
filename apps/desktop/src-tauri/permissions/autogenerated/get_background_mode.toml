@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-get-background-mode"
+description = "Enables the get_background_mode command without any pre-configured scope."
+commands.allow = ["get_background_mode"]
+
+[[permission]]
+identifier = "deny-get-background-mode"
+description = "Denies the get_background_mode command without any pre-configured scope."
+commands.deny = ["get_background_mode"]

@@ -1,0 +1,12 @@
+{
+  "name": "@corvus/desktop",
+  "private": true,
+  "version": "0.2.0-build-week.1",
+  "scripts": {
+    "tauri": "tauri",
+    "check": "tauri build --no-bundle"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.11.4"
+  }
+}

@@ -1,0 +1,8 @@
+autonomy: 2
+budgets:
+  max_runtime_seconds: 60
+filesystem:
+  read: []
+  write: []
+network:
+  allow_domains: []

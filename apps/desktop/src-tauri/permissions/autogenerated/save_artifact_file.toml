@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-save-artifact-file"
+description = "Enables the save_artifact_file command without any pre-configured scope."
+commands.allow = ["save_artifact_file"]
+
+[[permission]]
+identifier = "deny-save-artifact-file"
+description = "Denies the save_artifact_file command without any pre-configured scope."
+commands.deny = ["save_artifact_file"]

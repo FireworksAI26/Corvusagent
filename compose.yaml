@@ -1,0 +1,20 @@
+services:
+  corvus:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: corvus-mvp:local
+    read_only: true
+    environment:
+      CORVUS_BOOTSTRAP_TOKEN: ${CORVUS_BOOTSTRAP_TOKEN:?set CORVUS_BOOTSTRAP_TOKEN}
+      CORVUS_SESSION_SECRET: ${CORVUS_SESSION_SECRET:?set CORVUS_SESSION_SECRET}
+    ports:
+      - "${CORVUS_PORT:-8080}:8080"
+    tmpfs:
+      - /tmp:size=64m,noexec,nosuid
+    volumes:
+      - corvus-data:/data
+    restart: unless-stopped
+
+volumes:
+  corvus-data:

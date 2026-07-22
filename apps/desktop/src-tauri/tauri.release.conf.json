@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "bundle": {
+    "resources": {
+      "../../web/dist/": "web/",
+      "binaries/corvus-mvp": "corvus-mvp",
+      "binaries/corvus-mvp.exe": "corvus-mvp.exe"
+    },
+    "macOS": {
+      "signingIdentity": "-"
+    },
+    "targets": ["nsis", "dmg", "appimage", "deb"]
+  }
+}

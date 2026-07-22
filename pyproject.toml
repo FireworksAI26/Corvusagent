@@ -1,0 +1,79 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "corvus"
+version = "0.2.0a1"
+description = "Configuration-driven, proof-carrying AI development platform"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+license = { text = "Proprietary" }
+authors = [{ name = "Corvus" }]
+dependencies = [
+  "alembic>=1.14,<2",
+  "authlib>=1.6,<2",
+  "cryptography>=48.0.1,<49",
+  "docker>=7,<8",
+  "fastapi>=0.116,<1",
+  "httpcore>=1,<2",
+  "httpx>=0.28,<1",
+  "keyring>=25,<26",
+  "platformdirs>=4,<5",
+  "psycopg[binary]>=3.2,<4",
+  "pydantic>=2.10,<3",
+  "pyyaml>=6,<7",
+  "rich>=13.9,<15",
+  "sqlalchemy>=2,<3",
+  "textual>=1,<7",
+  "typer>=0.15,<1",
+  "uvicorn>=0.35,<1",
+]
+
+[project.optional-dependencies]
+cloud = ["e2b>=2.3,<3"]
+
+[project.scripts]
+corvus = "corvus.cli:app"
+corvus-mvp = "corvus.mvp.cli:mvp_app"
+
+[dependency-groups]
+dev = [
+  "bandit>=1.8,<2",
+  "httpx2>=2.6.0",
+  "mypy>=1.15,<2",
+  "pip-audit>=2.9,<3",
+  "pytest>=9.0.3,<10",
+  "pytest-asyncio>=0.25,<2",
+  "ruff>=0.12,<1",
+  "types-docker>=7,<8",
+  "types-pyyaml>=6,<7",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["corvus"]
+
+[tool.pytest.ini_options]
+minversion = "8.3"
+testpaths = ["tests"]
+addopts = ["-ra", "--strict-markers", "--basetemp=.pytest-tmp"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+extend-exclude = [".pytest-tmp", ".pytest-*"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B", "S"]
+ignore = ["S101"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["corvus"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["S101"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+packages = ["corvus"]

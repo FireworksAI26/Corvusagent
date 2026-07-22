@@ -1,0 +1,3 @@
+autonomy: 3
+budgets:
+  max_runtime_seconds: 120

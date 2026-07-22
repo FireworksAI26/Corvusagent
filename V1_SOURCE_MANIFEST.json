@@ -1,0 +1,169 @@
+{
+  "source_archive": "C:\\Users\\lucas\\AppData\\Local\\hermes\\cache\\documents\\doc_ad10e2be8cd8_corvus.zip",
+  "source_archive_sha256": "32182488f2a19e5683c759542b2774501bf48761fbba4cd381acf8d8eaa7624f",
+  "extracted_at": "2026-07-13T04:49:28.830062+00:00",
+  "files": [
+    {
+      "path": "corvus/chat_agent.py",
+      "size": 9331,
+      "sha256": "833082b51a6c0d40b2951d54104c171127e9d2a5b5639ae98eff566395739c79"
+    },
+    {
+      "path": "corvus/cli.py",
+      "size": 37498,
+      "sha256": "58fec0cfcbbd40da240e73a1bf0e3af32abfdd6d775b04077a40ee2edf65d62a"
+    },
+    {
+      "path": "corvus/codex_cli.py",
+      "size": 22674,
+      "sha256": "8844f609cb787c6bee9cc35eff63f4bae4060da882e86bbed10c317ef1d6db72"
+    },
+    {
+      "path": "corvus/codex_install.py",
+      "size": 34540,
+      "sha256": "34548013a3bfa5bf0a686a99939c46fd0d314c3ade1d208ee4a73d346a329f3b"
+    },
+    {
+      "path": "corvus/config.py",
+      "size": 5831,
+      "sha256": "569a41db1d283a8755d7fc7fd3ac897c3a0c6baec59b044ab0f121707c3b8275"
+    },
+    {
+      "path": "corvus/conversations.py",
+      "size": 28883,
+      "sha256": "16bf1a6488f6aa89aeb731eece74ca66ad581ad0265e64d2cfeb6a39a1d006db"
+    },
+    {
+      "path": "corvus/delivery.py",
+      "size": 13149,
+      "sha256": "a3239a2c73a0968951acc9013580b2eb56682423df057c2df6a8ae74a40e3b8a"
+    },
+    {
+      "path": "corvus/evals.py",
+      "size": 1347,
+      "sha256": "7e608b2397800106e06fd7d031f1404d8c90481dc19793da50fdce13915e268f"
+    },
+    {
+      "path": "corvus/interactive.py",
+      "size": 9511,
+      "sha256": "60a0be006998b260d632f45bee079d6a0c2e853a90830a4c59b0e5e7938455ff"
+    },
+    {
+      "path": "corvus/memory.py",
+      "size": 4409,
+      "sha256": "06163c1885db0ac023eed37cfddc9f8473ed7f5aa5db93c83a0f68418af1a455"
+    },
+    {
+      "path": "corvus/models.py",
+      "size": 10589,
+      "sha256": "72d03b098dfe59053fa402521c5f93b3bb00a20995e9c68d454ca2256bdf05d5"
+    },
+    {
+      "path": "corvus/model_catalog.py",
+      "size": 8831,
+      "sha256": "93b6d3ed739605f888a3bd07c11f8efc6cd192ad0f8bc1d488b9508c6ad814f6"
+    },
+    {
+      "path": "corvus/onboarding.py",
+      "size": 17243,
+      "sha256": "ed210856e7f76a53fb019ed58f4d447029123fcc1f8bcdfb1a548805370efb08"
+    },
+    {
+      "path": "corvus/onboarding_tui.py",
+      "size": 33535,
+      "sha256": "02be04836938ea055b193938d6966354953d3bff4f256c7835f08c8cb9f191da"
+    },
+    {
+      "path": "corvus/orchestration.py",
+      "size": 4005,
+      "sha256": "ffb4b23540427d216a40f965807ddc0d3990e445f43d142d23ddb51d33b94734"
+    },
+    {
+      "path": "corvus/policy.py",
+      "size": 2676,
+      "sha256": "73565fd92f47046e4536c0c6eb43cbf16a697983490138c0e864da68de118710"
+    },
+    {
+      "path": "corvus/providers.py",
+      "size": 10476,
+      "sha256": "9b79213c7ebab05f173362f28f9dcb1d72022f913668dd0c5993b1d4b1107484"
+    },
+    {
+      "path": "corvus/provider_control.py",
+      "size": 11712,
+      "sha256": "dbb4d22a501af059bde3c2a686bf7848cf4dec23bfdf7c76c5ad8cbe47239bfe"
+    },
+    {
+      "path": "corvus/sandbox.py",
+      "size": 15562,
+      "sha256": "2fbf7cf6fb8d5249e7255e015241bc46f54949d3205624d464948bb817c280eb"
+    },
+    {
+      "path": "corvus/security.py",
+      "size": 3331,
+      "sha256": "a9f95022db5be671a120b2c401c2abc8a5c3ab50323e7342cbc5742a30d03c73"
+    },
+    {
+      "path": "corvus/skills.py",
+      "size": 4138,
+      "sha256": "f1d642c88d5933f767308338214eede77deae145bc9a32465271fd09196ccf9d"
+    },
+    {
+      "path": "corvus/store.py",
+      "size": 8968,
+      "sha256": "5e6e2ffa6573dfd9131e6d8375170f1d7db73de57a4db0ede20c73b28f3b7c56"
+    },
+    {
+      "path": "corvus/tui.py",
+      "size": 47876,
+      "sha256": "5cca2e27ac3f39322a879b9028d376529aa89d863086c110cb38d468cd413396"
+    },
+    {
+      "path": "corvus/verification.py",
+      "size": 1719,
+      "sha256": "fd34c17b205ad2403e412e0b9c71891b475346d1f3d7383e389bc83552609c37"
+    },
+    {
+      "path": "corvus/workflow.py",
+      "size": 9984,
+      "sha256": "79430585708db1b5f6addb40fcf6009a083fa62dc69e4b7a5ce3016582202c96"
+    },
+    {
+      "path": "corvus/__init__.py",
+      "size": 63,
+      "sha256": "0948788774dea495e766ec74e24edeac3f0fc9fdc31d431422fe0cbb03328ee3"
+    },
+    {
+      "path": "corvus/__main__.py",
+      "size": 34,
+      "sha256": "c288b66e30b4c2c13c9a0fd86ba965da1c4de8f32d835f7daa4baff848baa3ec"
+    }
+  ],
+  "skipped_archive_entries": [
+    "corvus/__pycache__/chat_agent.cpython-312.pyc",
+    "corvus/__pycache__/cli.cpython-312.pyc",
+    "corvus/__pycache__/codex_cli.cpython-312.pyc",
+    "corvus/__pycache__/codex_install.cpython-312.pyc",
+    "corvus/__pycache__/config.cpython-312.pyc",
+    "corvus/__pycache__/conversations.cpython-312.pyc",
+    "corvus/__pycache__/delivery.cpython-312.pyc",
+    "corvus/__pycache__/evals.cpython-312.pyc",
+    "corvus/__pycache__/interactive.cpython-312.pyc",
+    "corvus/__pycache__/memory.cpython-312.pyc",
+    "corvus/__pycache__/models.cpython-312.pyc",
+    "corvus/__pycache__/model_catalog.cpython-312.pyc",
+    "corvus/__pycache__/onboarding.cpython-312.pyc",
+    "corvus/__pycache__/onboarding_tui.cpython-312.pyc",
+    "corvus/__pycache__/orchestration.cpython-312.pyc",
+    "corvus/__pycache__/policy.cpython-312.pyc",
+    "corvus/__pycache__/providers.cpython-312.pyc",
+    "corvus/__pycache__/provider_control.cpython-312.pyc",
+    "corvus/__pycache__/sandbox.cpython-312.pyc",
+    "corvus/__pycache__/security.cpython-312.pyc",
+    "corvus/__pycache__/skills.cpython-312.pyc",
+    "corvus/__pycache__/store.cpython-312.pyc",
+    "corvus/__pycache__/tui.cpython-312.pyc",
+    "corvus/__pycache__/workflow.cpython-312.pyc",
+    "corvus/__pycache__/__init__.cpython-312.pyc"
+  ]
+}

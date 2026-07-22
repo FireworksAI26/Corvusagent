@@ -1,0 +1,46 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "legacy/artifacts/aa/artifact.bin": {
+      "sha256": "c7c5c1d70c5dec4416ab6158afd0b223ef40c29b1dc1f97ed9428b94d4cadb1c",
+      "size": 8
+    },
+    "legacy/backups/backup/checkpoint.enc": {
+      "sha256": "305531dcc50ebca31cf1d5b31e9fc76ed51f66b3b6dd5a030c6539ae6532f979",
+      "size": 10
+    },
+    "legacy/bundles/bundle/bundle.json": {
+      "sha256": "a9d5f6d002d956b8af5787a05e0ca000d45c03977ffa54ee8fbed719fed5fd23",
+      "size": 20
+    },
+    "legacy/config/.env": {
+      "sha256": "b1b8dc2cb3f9d2afe33041a40903b77eba2f14285d6d8a16a1d160aee364caf1",
+      "size": 39
+    },
+    "legacy/config/onboarding.json": {
+      "sha256": "cb9ba7be4aaabfd6931eee038500b99aaa5ac2cf6a6fc8c8e1673fbc2177e1d6",
+      "size": 41
+    },
+    "legacy/config/policy.yaml": {
+      "sha256": "061e7f4155342a94ec08ba6f581501a61bf688d6a0eca6404d09f57b072f34a8",
+      "size": 48
+    },
+    "legacy/config/providers.yaml": {
+      "sha256": "5f0540fafe62e0cd61960d96f6787218e25aee47c160994a5c6f3cf801467c43",
+      "size": 213
+    },
+    "legacy/corvus.db": {
+      "sha256": "873fdbf5e454e669126af2934b7f98f8b9de8d2b1be4a2bc64595e9bea7e71e6",
+      "size": 36864
+    },
+    "legacy/project/.corvus/policy.yaml": {
+      "sha256": "112712a06839311e72340f192511c8e750b96ac85818208ad055eaaa32e21ea4",
+      "size": 111
+    },
+    "public_contract.json": {
+      "sha256": "8543a623f27facb31ee9e6a5759562c2b6f860988018fb1d31a649ae264438ad",
+      "size": 244996
+    }
+  },
+  "schema_version": 1
+}

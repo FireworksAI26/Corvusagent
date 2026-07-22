@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 520 120">
+  <style>
+    .brand-ink { color: #15171a; }
+    @media (prefers-color-scheme: dark) { .brand-ink { color: #f2f0e9; } }
+  </style>
+  <g class="brand-ink">
+    <path d="M86 19A43 43 0 1 0 86 101" stroke="currentColor" stroke-linecap="square" stroke-width="11"/>
+    <path d="M75 38A22 22 0 1 0 75 82" stroke="currentColor" stroke-linecap="square" stroke-width="11"/>
+    <path fill="#66d9ee" d="M52 53h14v14H52z"/>
+    <text x="132" y="78" fill="currentColor" font-family="Inter Tight, Segoe UI, sans-serif" font-size="58" font-weight="720" letter-spacing="9">CORVUS</text>
+  </g>
+</svg>

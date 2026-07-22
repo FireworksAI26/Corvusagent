@@ -1,0 +1,24 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main-window",
+  "description": "The authenticated loopback console can invoke only registered Corvus commands.",
+  "windows": ["main"],
+  "remote": {
+    "urls": ["http://127.0.0.1:*", "http://localhost:*"]
+  },
+  "permissions": [
+    "allow-open-external-url",
+    "allow-select-repository-directory",
+    "allow-save-artifact-file",
+    "allow-set-background-mode",
+    "allow-get-background-mode",
+    "allow-load-desktop-preferences",
+    "allow-save-desktop-preferences",
+    "autostart:allow-enable",
+    "autostart:allow-disable",
+    "autostart:allow-is-enabled",
+    "notification:allow-is-permission-granted",
+    "notification:allow-request-permission",
+    "notification:allow-show"
+  ]
+}

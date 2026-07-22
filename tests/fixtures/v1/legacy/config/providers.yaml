@@ -1,0 +1,8 @@
+active_provider: fixture
+providers:
+- api_key: fixture-sensitive-value-123456
+  base_url: https://api.example.invalid
+  keyring_service: corvus-model-provider
+  kind: openai
+  model: fixture-model
+  name: fixture
