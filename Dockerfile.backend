@@ -11,26 +11,18 @@ COPY corvus/ corvus/
 
 RUN python -m build --wheel --outdir /wheel
 
+
 FROM python:3.12.10-slim-bookworm AS runtime
 
-ENV PYTHONDONTWRITEBYTECODE=1 
-PYTHONUNBUFFERED=1 
-PORT=8080
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+ENV PORT=8080
 
-RUN useradd 
---system 
---uid 10001 
---home-dir /app 
---create-home 
-corvus
+RUN useradd --system --uid 10001 --home-dir /app --create-home corvus
 
 COPY --from=wheel-builder /wheel/*.whl /tmp/
 
-RUN python -m pip install 
---no-cache-dir 
-/tmp/corvus-.whl 
-"e2b>=2.3,<3" 
-&& rm /tmp/corvus-.whl
+RUN WHEEL_PATH="$(find /tmp -maxdepth 1 -type f -print -quit)" && python -m pip install --no-cache-dir "$WHEEL_PATH" "e2b>=2.3,<3" && rm "$WHEEL_PATH"
 
 USER corvus
 
@@ -38,12 +30,6 @@ WORKDIR /app
 
 EXPOSE 8080
 
-HEALTHCHECK 
---interval=10s 
---timeout=3s 
---start-period=15s 
---retries=3 
-CMD ["python", "-c", "import os, urllib.request; urllib.request.urlopen('http://127.0.0.1:' + os.environ.get('PORT', '8080') + '/ready', timeout=2).read()"]
+HEALTHCHECK --interval=10s --timeout=3s --start-period=15s --retries=3 CMD ["python", "-c", "import os, urllib.request; urllib.request.urlopen('http://127.0.0.1:' + os.environ.get('PORT', '8080') + '/ready', timeout=2).read()"]
 
-CMD ["sh", "-c", "exec uvicorn corvus.mvp.hosted:create_hosted_app --factory --host 0.0.0.0 --port "${PORT:-8080}" --no-access-log"]
-
+CMD ["sh", "-c", "exec uvicorn corvus.mvp.hosted:create_hosted_app --factory --host 0.0.0.0 --port ${PORT:-8080} --no-access-log"]
